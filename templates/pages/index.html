@@ -1,6 +1,8 @@
 {% extends 'layouts/base.html' %}
 {% load static %}
 
+{% load render_bundle from webpack_loader %}
+
 {% block breadcrumbs %}{% endblock breadcrumbs %}
 
 {% block content %}
@@ -81,10 +83,11 @@
     <div class="col-xl-12 col-md-12">
       <div class="card Recent-Users">
         <div class="card-header">
-          <h5>CUSTOM Page (templates DIR)</h5>
+          <h5>CUSTOM Page with React Snippet</h5>
         </div>
         <div class="card-block px-0 py-3">
-            THIS card will render React
+            <div id="app"></div>
+            {% render_bundle 'frontend' %}
         </div>
       </div>
     </div>
