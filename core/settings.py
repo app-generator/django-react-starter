@@ -43,6 +43,8 @@ if RENDER_EXTERNAL_HOSTNAME:
 # Application definition
 
 INSTALLED_APPS = [
+    'webpack_loader',
+    'frontend',
     'admin_datta.apps.AdminDattaConfig',
     "django.contrib.admin",
     "django.contrib.auth",
@@ -53,6 +55,13 @@ INSTALLED_APPS = [
 
     "apps.home",
 ]
+
+WEBPACK_LOADER = {
+    'DEFAULT': {
+        'BUNDLE_DIR_NAME': 'frontend/',
+        'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats.json')
+    }
+}
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
