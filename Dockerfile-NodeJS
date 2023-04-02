@@ -1,0 +1,29 @@
+ARG NODE_VERSION=16
+
+FROM ubuntu:18.04
+
+# set environment variables
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
+
+RUN apt-get update 
+RUN apt-get install -y build-essential
+RUN apt-get install -y python3-pip
+RUN curl -sL https://deb.nodesource.com/setup_$NODE_VERSION.x | bash - && apt-get install -y nodejs npm
+
+COPY requirements.txt .
+
+# install python dependencies
+RUN pip3 install --upgrade pip
+RUN pip3 install --no-cache-dir -r requirements.txt
+
+COPY . .
+
+#RUN npm i
+#RUN npm run build
+
+# running migrations
+RUN python manage.py migrate
+
+# gunicorn
+CMD ["gunicorn", "--config", "gunicorn-cfg.py", "core.wsgi"]
