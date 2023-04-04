@@ -1,5 +1,3 @@
-Dockerfile
-Dockerfile-NodeJS
 
 # ignore .git and .cache folders
 .git
