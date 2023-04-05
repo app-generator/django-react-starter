@@ -4,6 +4,8 @@ services:
     container_name: appseed_app
     restart: always
     build: .
+    ports:
+      - "5005:5005"
     networks:
       - db_network
       - web_network
