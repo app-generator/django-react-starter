@@ -1,0 +1,34 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% load render_bundle from webpack_loader %}
+
+{% block breadcrumbs %}{% endblock breadcrumbs %}
+
+{% block content %}
+
+  <!-- [ Main Content ] start -->
+  <div class="row">
+    <!--[ daily sales section ] start-->
+    <!--[ year  sales section ] end-->
+    <!--[ Recent Users ] start-->
+    <div class="col-xl-12 col-md-12">
+      <div class="card Recent-Users">
+        <div class="card-header">
+          <h5>
+            Built with Django & <a target="_blank" href="https://recharts.org/en-US/">ReCharts</a>
+          </h5>
+        </div>
+        <div class="card-block px-0 py-3">
+          <div id="app"></div>
+            {{ country_count|json_script:'country_count' }}
+            {% render_bundle 'frontend' %}
+        </div>
+      </div>
+    </div>
+    <!--[ Recent Users ] end-->
+
+  </div>
+  <!-- [ Main Content ] end -->
+
+{% endblock content %}
