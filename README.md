@@ -105,15 +105,19 @@ Open the Django shell and create manually new records:
 ```python
 $ python manage.py shell
 >>> from apps.home.models import Sales
->>> s1 = Sales() # use the default country `USA`
->>> s2 = Sales() # use the default country `USA`
+>>>
+>>> s1 = Sales() # Use the default country `USA`
+>>> s1.save()
+>>>
+>>> s2 = Sales() # Use the default country `USA`
+>>> s2.save()
 >>> 
 >>> s3 = Sales()
->>> s3.country = 'ger' # a sale from Germany
+>>> s3.country = 'ger' # Create a sale from `Germany`
 >>> s3.save()
 >>> 
 >>> s4 = Sales()
->>> s4.country = 'france' # a sale from France
+>>> s4.country = 'france' # Ans another one from France
 >>> s4.save()
 ```
 
