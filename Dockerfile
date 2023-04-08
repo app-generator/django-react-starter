@@ -7,6 +7,8 @@ RUN yarn install
 COPY frontend/ /app/frontend/
 RUN yarn build
 
+COPY webpack-stats.json /app/
+
 # Stage 2: Build the Django app
 FROM python:3.10-alpine
 WORKDIR /app
