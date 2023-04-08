@@ -3,8 +3,8 @@
 Open-source **Django Starter** bundled with React, React-Flow - Actively supported by AppSeed. 
 
 - 👉 [Django & React](https://django-react-starter.onrender.com/charts) - `LIVE deployment`
-  - [ReCharts](https://django-react-starter.onrender.com/charts) `page`
-  - [ReactFlow](https://django-react-starter.onrender.com/flow) `page`
+  - [ReCharts](https://django-react-starter.onrender.com/charts) `sample page`
+  - [ReactFlow](https://django-react-starter.onrender.com/flow) `sample page`
 - 🚀 Free [Support](https://appseed.us/support/) via `Email` & `Discord`
 
 <br />
