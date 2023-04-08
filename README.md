@@ -66,14 +66,14 @@ $ yarn build # production build
 
 <br />
 
-### 👉 Set Up for `Unix`, `MacOS` 
+### 👉 Build `Django Backend` 
 
 > Install modules via `VENV`  
 
 ```bash
 $ virtualenv env
 $ source env/bin/activate
-$ pip3 install -r requirements.txt
+$ pip install -r requirements.txt
 ```
 
 <br />
