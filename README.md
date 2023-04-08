@@ -56,6 +56,16 @@ $ cd django-react-starter
 
 <br />
 
+### 👉 Build `React Frontend`
+
+```bash
+$ yarn       # Install React
+$ yarn dev   # development build (with LIVE Reload)
+$ yarn build # production build
+```
+
+<br />
+
 ### 👉 Set Up for `Unix`, `MacOS` 
 
 > Install modules via `VENV`  
@@ -88,38 +98,28 @@ At this point, the app runs at `http://127.0.0.1:8000/`.
 
 <br />
 
-### 👉 Set Up for `Windows` 
+## `Charts` Provisioning
 
-> Install modules via `VENV` (windows) 
+Open the Django shell and create manually new records: 
 
-```
-$ virtualenv env
-$ .\env\Scripts\activate
-$ pip3 install -r requirements.txt
-```
-
-<br />
-
-> Set Up Database
-
-```bash
-$ python manage.py makemigrations
-$ python manage.py migrate
-```
-
-<br />
-
-> Start the APP
-
-```bash
-$ python manage.py createsuperuser # create the admin
-$ python manage.py runserver       # start the project
+```python
+$ python manage.py shell
+>>> from apps.home.models import Sales
+>>> s1 = Sales() # use the default country `USA`
+>>> s2 = Sales() # use the default country `USA`
+>>> 
+>>> s3 = Sales()
+>>> s3.country = 'ger' # a sale from Germany
+>>> s3.save()
+>>> 
+>>> s4 = Sales()
+>>> s4.country = 'france' # a sale from France
+>>> s4.save()
 ```
 
+Once the information is saved, the `/charts` route should render the information:
 
-At this point, the app runs at `http://127.0.0.1:8000/`. 
-
-<br />
+![Django & ReCharts](https://user-images.githubusercontent.com/51070104/230713648-a55e1ccf-ddc6-4d65-b7b3-d840a8a7e254.png)
 
 <br />
 
