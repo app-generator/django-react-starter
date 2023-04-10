@@ -1,6 +1,6 @@
-# [Django & React Codebase](https://github.com/app-generator/django-react-starter)
+# [Django & React](https://blog.appseed.us/how-to-integrate-django-with-react/) `Codebase`
 
-Open-source **Django Starter** bundled with React, React-Flow - Actively supported by AppSeed. 
+Open-source **Django Starter** bundled with React, React-Flow - Actively supported by AppSeed. The code for this starter is fully explained [here](https://blog.appseed.us/how-to-integrate-django-with-react/).
 
 - 👉 [Django & React](https://django-react-starter.onrender.com/charts) - `LIVE deployment`
   - [ReCharts](https://django-react-starter.onrender.com/charts) `sample page`
@@ -154,4 +154,4 @@ The project is coded using a simple and intuitive structure presented below:
 <br />
 
 ---
-[Django & React Codebase](https://github.com/app-generator/django-react-starter) - `Open-Source` starter crafted by **[AppSeed](https://appseed.us)**.
+[Django & React](https://blog.appseed.us/how-to-integrate-django-with-react/) `Codebase` - `Open-Source` starter crafted by **[AppSeed](https://appseed.us)**.
