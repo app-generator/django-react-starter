@@ -22,7 +22,7 @@ Open-source **Django Starter** bundled with React, React-Flow - Actively support
   
 <br />
 
-[![Django & React Codebase - Free Starter by AppSeed.](https://user-images.githubusercontent.com/51070104/229304184-ed3cd761-9a43-43f0-90ba-9a2fcb0a4534.png)](https://github.com/app-generator/django-react-starter)
+[![Django & React - Open-Source Starter](https://user-images.githubusercontent.com/51070104/230912843-2c670ac7-2ce6-4289-8e00-7ccca1f3a67f.gif)](https://blog.appseed.us/how-to-integrate-django-with-react/)
 
 <br /> 
 
