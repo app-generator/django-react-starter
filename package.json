@@ -1,6 +1,6 @@
 {
   "name": "django-react-starter",
-  "version": "2.0.0",
+  "version": "1.0.1",
   "description": "Starter repo for serving a React SPA from Django",
   "main": "index.js",
   "scripts": {
